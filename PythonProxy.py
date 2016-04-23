@@ -80,7 +80,10 @@ Qual a diferença entre um proxy Elite, Anónimo e Transparente?
      São enviados os cabeçalhos HTTP "Proxy-agent" e "HTTP_X_FORWARDED_FOR".
 
 """
-
+   import socket, thread, select
+2     # for openshift env
+3     import os
+4     
 import socket, thread, select
 
 __version__ = '0.1.0 Draft 1'
